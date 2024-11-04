@@ -51,7 +51,6 @@ try:
     with open(file_name,"w") as infile:
         for lines in a:
             infile.write(lines.strip()+sep+"\n")
-
     with open(file_name,"r") as file:
         for line in file:
             b=line.split(",")
