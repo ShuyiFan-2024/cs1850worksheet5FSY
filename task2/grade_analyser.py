@@ -59,7 +59,7 @@ try:
             sums=[int(i) for i in b if i.isnumeric()]
             average=round(sum(sums)/len(sums),2)
             classification=classifications_grade(average) 
-            c=c+b[0]+sep+str(average)+sep+classification+"\n"
+            c=c+b[0]+sep+f"{average:.2f}"+sep+classification+"\n"
     with open(file_name+"_out.csv","w") as file:
        file.write(c)
 except FileNotFoundError :
