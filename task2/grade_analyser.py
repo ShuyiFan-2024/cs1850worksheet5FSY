@@ -54,7 +54,6 @@ try:
 
     with open(file_name,"r") as file:
         for line in file:
-            
             b=line.split(",")
             if b[0]=="student_id":
                 continue
